@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Santino 🤎</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Georgia, serif;
+background:#F7F0E8;
+color:#5C4033;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+overflow:hidden;
+}
+
+.contenedor{
+padding:40px;
+}
+
+h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+p{
+font-size:20px;
+line-height:1.7;
+}
+
+button{
+margin-top:30px;
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:40px;
+background:#E8CFCF;
+color:#5C4033;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.corazon{
+position:absolute;
+color:#d88;
+font-size:20px;
+animation:caer 8s linear infinite;
+}
+
+@keyframes caer{
+0%{
+transform:translateY(-100px);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>Santino 🤎</h1>
+
+<p>
+Nuestra historia merece un lugar que dure para siempre.
+</p>
+
+<p>
+03 • 08 • 2023
+</p>
+
+<button onclick="alert('Bienvenido a nuestra historia ❤️')">
+Entrar
+</button>
+
+</div>
+
+<script>
+
+for(let i=0;i<25;i++){
+
+let c=document.createElement("div");
+
+c.className="corazon";
+
+c.innerHTML="🤎";
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.animationDuration=(5+Math.random()*5)+"s";
+
+c.style.fontSize=(15+Math.random()*25)+"px";
+
+document.body.appendChild(c);
+
+}
+
+</script>
+
+</body>
+</html>
