@@ -7,77 +7,62 @@
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Georgia, serif;
-background:#F7F0E8;
-color:#5C4033;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-text-align:center;
-overflow:hidden;
+padding:0;
+box-sizing:border-box;
 }
 
-.contenedor{
-padding:40px;
+body{
+font-family:Georgia,serif;
+background:#f7f0e8;
+color:#5d4037;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+background:linear-gradient(#f7f0e8,#efe3d6);
 }
 
 h1{
-font-size:50px;
-margin-bottom:10px;
+font-size:55px;
+margin-bottom:15px;
 }
 
 p{
-font-size:20px;
-line-height:1.7;
+font-size:22px;
+max-width:600px;
+line-height:1.8;
 }
 
 button{
-margin-top:30px;
-padding:15px 35px;
-font-size:18px;
+margin-top:40px;
+padding:18px 40px;
 border:none;
-border-radius:40px;
-background:#E8CFCF;
-color:#5C4033;
+border-radius:50px;
+background:#e7cfcf;
+font-size:20px;
 cursor:pointer;
-transition:0.3s;
 }
 
 button:hover{
 transform:scale(1.05);
-}
-
-.corazon{
-position:absolute;
-color:#d88;
-font-size:20px;
-animation:caer 8s linear infinite;
-}
-
-@keyframes caer{
-0%{
-transform:translateY(-100px);
-opacity:0;
-}
-20%{
-opacity:1;
-}
-100%{
-transform:translateY(110vh);
-opacity:0;
-}
+transition:.3s;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<div class="contenedor">
+<section class="hero">
 
 <h1>Santino 🤎</h1>
 
@@ -85,38 +70,15 @@ opacity:0;
 Nuestra historia merece un lugar que dure para siempre.
 </p>
 
-<p>
+<p style="margin-top:20px;">
 03 • 08 • 2023
 </p>
 
-<button onclick="alert('Bienvenido a nuestra historia ❤️')">
-Entrar
+<button>
+Entrar ❤️
 </button>
 
-</div>
-
-<script>
-
-for(let i=0;i<25;i++){
-
-let c=document.createElement("div");
-
-c.className="corazon";
-
-c.innerHTML="🤎";
-
-c.style.left=Math.random()*100+"vw";
-
-c.style.animationDuration=(5+Math.random()*5)+"s";
-
-c.style.fontSize=(15+Math.random()*25)+"px";
-
-document.body.appendChild(c);
-
-}
-
-</script>
+</section>
 
 </body>
 </html>
-
