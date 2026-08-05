@@ -250,3 +250,11 @@ section:nth-of-type(5){animation-delay:1s;}
         transform:translateY(0);
     }
 }
+section::after{
+    content:"❦";
+    display:block;
+    text-align:center;
+    font-size:28px;
+    color:#c8a98d;
+    margin-top:35px;
+}
