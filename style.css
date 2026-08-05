@@ -146,3 +146,55 @@ footer{
   padding:40px;
   text-align:center;
 }
+/* ===== MENÚ ===== */
+
+.menu{
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(10px);
+    padding:12px 25px;
+    border-radius:40px;
+    display:flex;
+    gap:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#6b4d3a;
+    font-weight:500;
+}
+
+.menu a:hover{
+    color:#b58b67;
+}
+
+/* ===== TARJETAS ===== */
+
+section{
+    background:white;
+    border-radius:25px;
+    margin:40px auto;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+/* ===== TÍTULOS ===== */
+
+h2{
+    font-size:42px;
+    color:#6b4d3a;
+}
+
+h3{
+    color:#9c7658;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    border-radius:25px 25px 0 0;
+}
