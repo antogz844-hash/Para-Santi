@@ -228,3 +228,21 @@ footer{
     color:#8b6b55;
     font-size:18px;
 }
+section{
+    opacity:0;
+    transform:translateY(40px);
+    animation:aparecer .8s forwards;
+}
+
+section:nth-of-type(1){animation-delay:.2s;}
+section:nth-of-type(2){animation-delay:.4s;}
+section:nth-of-type(3){animation-delay:.6s;}
+section:nth-of-type(4){animation-delay:.8s;}
+section:nth-of-type(5){animation-delay:1s;}
+
+@keyframes aparecer{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
