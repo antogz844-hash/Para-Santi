@@ -9,10 +9,10 @@ html{
 }
 
 body{
-  font-family:Georgia, serif;
+  font-family:'Poppins',sans-serif;
   background:#f8f3ed;
   color:#5d4037;
-  line-height:1.7;
+  line-height:1.8;
 }
 
 .hero{
