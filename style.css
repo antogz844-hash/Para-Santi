@@ -37,13 +37,16 @@ body{
 
 .hero h1{
     font-family:'Cormorant Garamond',serif;
-  font-size:52px;
-  margin-bottom:20px;
+    font-size:70px;
+    color:white;
+    text-shadow:0 5px 20px rgba(0,0,0,.45);
 }
 
 .hero p{
-  font-size:22px;
-  margin-bottom:30px;
+    color:white;
+    font-size:22px;
+    margin-bottom:25px;
+    text-shadow:0 3px 10px rgba(0,0,0,.35);
 }
 
 button{
