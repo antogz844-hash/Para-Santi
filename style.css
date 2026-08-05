@@ -255,3 +255,10 @@ section::after{
     color:#c8a98d;
     margin-top:35px;
 }
+.firma{
+    margin-top:25px;
+    color:white;
+    font-style:italic;
+    font-size:18px;
+    opacity:.9;
+}
