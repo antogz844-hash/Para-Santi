@@ -30,6 +30,7 @@ body{
 }
 
 .hero h1{
+    font-family:'Cormorant Garamond',serif;
   font-size:52px;
   margin-bottom:20px;
 }
