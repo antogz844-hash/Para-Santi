@@ -22,6 +22,18 @@ body{
   align-items:center;
   text-align:center;
   padding:40px;
+  background:
+  linear-gradient(rgba(248,243,237,.88),rgba(248,243,237,.88)),
+  url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+}
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:40px;
   background:linear-gradient(to bottom,#f8f3ed,#efe3d8);
 }
 
