@@ -49,3 +49,47 @@ function actualizarContador() {
 
 actualizarContador();
 setInterval(actualizarContador, 1000);
+// CONTADOR DE TIEMPO JUNTOS 🤎
+
+function actualizarContador() {
+    const inicio = new Date(2023, 7, 3);
+    const ahora = new Date();
+
+    let años = ahora.getFullYear() - inicio.getFullYear();
+    let meses = ahora.getMonth() - inicio.getMonth();
+    let dias = ahora.getDate() - inicio.getDate();
+
+    if (dias < 0) {
+        meses--;
+        dias += new Date(
+            ahora.getFullYear(),
+            ahora.getMonth(),
+            0
+        ).getDate();
+    }
+
+    if (meses < 0) {
+        años--;
+        meses += 12;
+    }
+
+    const diferencia = ahora - inicio;
+    const diasTotales = Math.floor(
+        diferencia / (1000 * 60 * 60 * 24)
+    );
+
+    const contador = document.getElementById("tiempo");
+
+    if (contador) {
+        contador.innerHTML =
+            años + " años, " +
+            meses + " meses y " +
+            dias + " días juntos 🤎" +
+            "<br><small>" +
+            diasTotales +
+            " días desde que empezó nuestra historia</small>";
+    }
+}
+
+actualizarContador();
+setInterval(actualizarContador, 1000);
